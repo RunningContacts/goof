@@ -22,7 +22,7 @@ jobs:
     - name: Install Snyk & Authenticate
       run: |
          sudo npm install -g snyk
-         wget https://raw.githubusercontent.com/runningcontacts/snyk-code-helper/main/snyk-code-helper-nc.sh
+         wget https://raw.githubusercontent.com/RunningContacts/snyk-code-helper/main/snyk-code-helper-nc.sh
          chmod +x ./snyk-code-helper-nc.sh
          snyk auth ${SNYK_TOKEN}
     # Run Snyk Code
