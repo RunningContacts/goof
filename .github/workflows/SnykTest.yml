@@ -26,7 +26,7 @@ jobs:
     # Run Snyk Open Source
     - name: Run Snyk Open Source
       run: |
-         snyk test --severity-threshold=high --sarif > results.sarif
+         snyk test --severity-threshold=medium --sarif > results.sarif
       continue-on-error: true
     # Upload Results  
     - name: Upload SARIF file
